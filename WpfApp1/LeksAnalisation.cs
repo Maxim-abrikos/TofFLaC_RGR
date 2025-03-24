@@ -209,14 +209,14 @@ namespace Compiler
 
             if (parts[0] != "Complex")
             {
-                error = "ключевое слово 'Complex' отсутствует или указано неверно";
+                error = "Ключевое слово 'Complex' отсутствует или указано неверно";
                 errorPosition = leftPart.IndexOf(parts[0], StringComparison.Ordinal);
                 ToReturn.Add(error + " " + "Позиция: " + errorPosition);
             }
 
             if (!IsValidVariableName(parts[1]))
             {
-                error = $"недопустимое имя переменной: '{parts[1]}'";
+                error = $"Недопустимое имя переменной: '{parts[1]}'";
                 errorPosition = leftPart.IndexOf(parts[1], StringComparison.Ordinal);
                 ToReturn.Add(error + " " + "Позиция: "+errorPosition);
             }
